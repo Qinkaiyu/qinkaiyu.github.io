@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Qinkai Yu is a PhD researcher at the University of Exeter and researcher at the Liverpool Centre for Cardiovascular Science, working across clinical AI, medical vision and language-model reasoning.">
+  <link rel="canonical" href="https://qinkaiyu.github.io/">
+  <title>Qinkai Yu | University of Exeter</title>
+  <style>
+/* Minimal Light theme: assets/css/style-no-dark-mode.css */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+body { background-color: #fff; padding: 0px; font: 16.0px/1.5 Crimson Pro, serif; color: #595959; font-weight: 400; margin: 0; }
+
+.pub-row { display: flex; align-items: center; }
+
+.social-icons a { display: inline-block; height: 2.4rem; width: 2.4rem; background-color: transparent; color: #043361 !important; border-radius: 100%; text-align: center; font-size: 1.15rem; line-height: 2.5rem; margin-right: 1rem; }
+
+.social-icons a:last-child { margin-right: 0; }
+
+.social-icons a:hover { background-color: white; color: black; transform: scale(1.2); }
+
+/*
+.social-icons a:after { content: ''; display: block; margin: 0px; height: 1px; width: 0px; background: transparent; transition: width .5s ease, background-color .5s ease; } .social-icons a:hover:after { width: 100%; background: #337ab7; } */
+.icon-button { background-color: white; border-radius: 3.6rem; cursor: pointer; display: inline-block; font-size: 2.0rem; height: 3.6rem; line-height: 3.6rem; margin: 0 5px; position: relative; text-align: center; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; width: 3.6rem; }
+
+.icon-button span { border-radius: 0; display: block; height: 0; left: 50%; margin: 0; position: absolute; top: 50%; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; width: 0; }
+
+.icon-button:hover span { width: 3.6rem; height: 3.6rem; border-radius: 3.6rem; margin: -1.8rem; }
+
+.twitter span { background-color: #4099ff; }
+
+.facebook span { background-color: #4286f4; }
+
+.linkedin span { background-color: #0077B5; }
+
+.github span { background-color: #000; }
+
+email { font-size: 14px; font-family: "Ubuntu Mono"; }
+
+.icon-button i { background: none; color: white; height: 3.6rem; left: 0; line-height: 3.6rem; position: absolute; top: 0; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; width: 3.6rem; z-index: 10; }
+
+.icon-button .icon-twitter { color: #4099ff; }
+
+.icon-button .icon-facebook { color: #4286f4; }
+
+.icon-button .icon-github { color: #000; }
+
+.icon-button .icon-linkedin { color: #0077B5; }
+
+.icon-button:hover .icon-twitter, .icon-button:hover .icon-facebook, .icon-button:hover .icon-github, .icon-button:hover .icon-linkedin { color: white; }
+
+autocolor { color: #595959; }
+
+lightonly { visibility: visible; }
+
+darkonly { visibility: hidden; }
+
+education { font-weight: 500; font-size: 115%; }
+
+papertitle { font-weight: 600; font-size: 100%; }
+
+.image { border-radius: 0.35em; border: 0; display: inline-block; position: relative; }
+
+.image:before { -moz-transition: opacity 0.2s ease-in-out; -webkit-transition: opacity 0.2s ease-in-out; -ms-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out; border-radius: 0.35em; content: ''; display: block; height: 100%; left: 0; opacity: 0.5; position: absolute; top: 0; width: 100%; }
+
+.image.avatar { border-radius: 100%; }
+
+.image.avatar:before { display: none; }
+
+.image.avatar img { border-radius: 100%; width: 45%; padding: 20px; }
+
+#header .image.avatar { margin: 0 0 1em 0; width: 8.00em; }
+
+h3, h4, h5, h6 { font-weight: 600; color: #043361; margin: 0 0 20px; }
+
+h1 { font-weight: 500; color: #043361; margin: 0 0 20px; }
+
+h2 { color: #043361; font-weight: 500; margin: 2px 0px 15px; font-size: 157%; }
+
+p, ul, ol, table, pre, dl { margin: 0 0 20px; }
+
+h1, h2, h3 { line-height: 1.1; }
+
+h1 { font-size: 28px; }
+
+a { color: #39c; text-decoration: none; }
+
+a:hover { color: #069; }
+
+a small { font-size: 11px; color: #777; margin-top: -0.3em; display: block; }
+
+a:hover small { color: #777; }
+
+.wrapper { width: 960px; margin: 0 auto; }
+
+blockquote { border-left: 1px solid #e5e5e5; margin: 0; padding: 0 0 0 20px; font-style: italic; }
+
+code, pre { font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; color: #333; }
+
+pre { max-width: 500px; padding: 8px 15px; background: #f8f8f8; border-radius: 5px; border: 1px solid #e5e5e5; overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th, td { text-align: left; padding: 5px 10px; border-bottom: 1px solid #e5e5e5; }
+
+dt { color: #444; font-weight: 500; }
+
+th { color: #444; }
+
+img { max-width: 100%; }
+
+header { width: 232px; float: left; position: fixed; -webkit-font-smoothing: subpixel-antialiased; padding-top: 4.0em; text-align: center; }
+
+header ul { list-style: none; height: 40px; padding: 0; background: #f4f4f4; border-radius: 5px; border: 1px solid #e0e0e0; width: 270px; }
+
+header li { width: 89px; float: left; border-right: 1px solid #e0e0e0; height: 40px; }
+
+header li:first-child a { border-radius: 5px 0 0 5px; }
+
+header li:last-child a { border-radius: 0 5px 5px 0; }
+
+header ul a { line-height: 1; font-size: 11px; color: #999; display: block; text-align: center; padding-top: 6px; height: 34px; }
+
+header ul a:hover { color: #999; }
+
+header ul a:active { background-color: #f0f0f0; }
+
+strong { color: #222; font-weight: 500; }
+
+header ul li + li + li { border-right: none; width: 89px; }
+
+header ul a strong { font-size: 14px; display: block; color: #222; }
+
+section { width: 650px; float: right; padding-top: 4.0em; padding-bottom: 50px; }
+
+small { font-size: 11px; }
+
+hr { border: 0; background: #e5e5e5; height: 1px; margin: 0 0 20px; }
+
+footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-smoothing: subpixel-antialiased; text-align: center; }
+
+@media print, screen and (max-width: 960px) { .pub-row { display: flex; align-items: center; }
+  div.wrapper { width: auto; margin: 0; }
+  header, section, footer { float: none; position: static; width: auto; }
+  header { padding-right: 320px; }
+  section { border: 1px solid #e5e5e5; border-width: 1px 0; padding: 20px 0; margin: 0 0 20px; }
+  header a small { display: inline; }
+  header ul { position: absolute; right: 50px; top: 52px; }
+  .image.avatar img { border-radius: 100%; width: 117px; padding: 20px; }
+  #head1o2 { visibility: hidden; }
+  #head2o2 { visibility: hidden; } }
+@media print, screen and (max-width: 960px) { body { word-wrap: break-word; padding: 15px; }
+  .pub-row { display: flex; align-items: center; }
+  header { padding: 0; }
+  pre, code { word-wrap: normal; } }
+@media print, screen and (max-width: 480px) { .pub-row { display: block; align-items: center; }
+  body { padding: 15px; }
+  header ul { width: 99%; }
+  header li, header ul li + li + li { width: 33%; }
+  .image.avatar img { border-radius: 100%; width: 95px; padding: 20px; }
+  #head1o2 { visibility: hidden; }
+  #head2o2 { visibility: hidden; } }
+@media print { body { padding: 0.4in; font-size: 12pt; color: #444; } }
+.biblink { text-decoration: none; display: inline; margin-right: 0px; }
+
+.fakelink { text-decoration: none; cursor: pointer; }
+
+.bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
+
+/* Minimal Light publications styles: assets/css/publications-no-dark-mode.css */
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.badge {
+    color: #fff !important;
+    border-radius: 0.125rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+:root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(181, 9, 172, 0.05); --global-text-color: #000000; --global-text-color-light: #828282; --global-theme-color: #002D72; --global-hover-color: #ffb81c; --global-footer-bg-color: #1c1c1c; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; }
+
+blockquote { background: var(--global-bg-color); border-left: 2px solid var(--global-theme-color); margin: 1.5em 10px; padding: 0.5em 10px; font-size: 1.2rem; }
+
+@media print, screen and (min-width: 480px) {.col-sm-9 {width: 100%;}}
+
+.publications { margin-top: 2rem; }
+
+.publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
+
+.publications h2 { margin-bottom: 1rem; }
+
+.publications h2 span { font-size: 1.5rem; }
+
+.publications h2.year { color: #e8e8e8; border-top: 1px solid #e8e8e8; margin-top: 2rem; margin-bottom: 0rem; text-align: right; }
+
+.publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
+
+.publications ol.bibliography li { min-height: 110px; margin-bottom: 0.5rem; }
+
+.publications ol.bibliography li .abbr { height: 8rem; margin-bottom: 0.5rem; }
+
+.publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); padding-left: 1rem; padding-right: 1rem; position: absolute; top: 8px; left: 16px; }
+
+.publications ol.bibliography li .abbr abbr a { color: white; }
+
+.publications ol.bibliography li .abbr abbr a:hover { text-decoration: none; }
+
+.publications ol.bibliography li .abbr .award { color: var(--global-theme-color) !important; border: 1px solid var(--global-theme-color); }
+
+.publications ol.bibliography li .title { font-weight: bolder; }
+
+.publications ol.bibliography li .author a { border-bottom: 1px var(--global-theme-color); }
+
+.publications ol.bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
+
+.publications ol.bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
+
+.publications ol.bibliography li .links a.btn { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; }
+
+.publications ol.bibliography li .links a.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+
+.publications ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
+.publications ol.bibliography li .hidden p { line-height: 1.4em; margin: 10px; }
+
+.publications ol.bibliography li .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
+
+.publications ol.bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+
+.publications ol.bibliography li div.abstract.hidden { border: dashed 1px var(--global-bg-color); }
+
+.publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
+
+.publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
+
+/* Small profile and content adaptations for this page */
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { min-height: 100vh; }
+a:focus-visible { outline: 2px solid #39c; outline-offset: 3px; border-radius: 2px; }
+.profile-portrait { display: flex; width: 100px; height: 100px; margin: 0 auto 1.2rem; align-items: center; justify-content: center; border: 1px solid #d8e0e8; border-radius: 50%; background: #f2f6fa; color: #043361; font-size: 2rem; letter-spacing: .08em; }
+header h1 { margin-bottom: .4rem; }
+.profile-position { margin: 0 0 .5rem; font-size: 1.04rem; }
+.profile-affiliations { margin: 1rem 0 .75rem; font-size: .94rem; line-height: 1.5; }
+.profile-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem .85rem; margin-top: 1.15rem; font-size: .9rem; }
+.profile-links a { white-space: nowrap; }
+#main { display: block; }
+#main > section { scroll-margin-top: 1rem; }
+#main h2 { scroll-margin-top: 1rem; }
+#main p { max-width: 68ch; }
+.research-list { padding-left: 1.3rem; }
+.research-list li { margin-bottom: .55rem; }
+#news-list { padding-left: 1.2rem; }
+#news-list li { margin-bottom: .65rem; }
+#news-list time { color: #043361; font-weight: 600; }
+.publications { margin-top: .4rem; }
+.publications h3.year { margin: 1.25rem 0 .55rem; color: #043361; font-size: 1.15rem; }
+.publications .pub-row { align-items: flex-start; }
+.publications ol.bibliography li { min-height: 0; margin-bottom: 1rem; }
+.publications ol.bibliography li .links { margin-top: .4rem; }
+.experience-list { padding: 0; list-style: none; }
+.experience-list li { padding: .65rem 0; border-bottom: 1px solid #e5e5e5; }
+.experience-date { display: block; margin-bottom: .15rem; color: #043361; font-family: "Ubuntu Mono", monospace; font-size: .85rem; }
+.experience-list p { margin: .15rem 0 0; }
+.education-list { padding-left: 1.2rem; }
+.education-list li { margin-bottom: .5rem; }
+footer { z-index: 1; }
+footer small { color: #828282; }
+@media (max-width: 960px) { .profile-portrait { margin-top: .5rem; } }
+@media (max-width: 480px) { .profile-links { gap: .3rem .9rem; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header id="profile">
+      <!-- Replace this initials placeholder with a portrait when one is supplied. -->
+      <div class="profile-portrait" id="profile-portrait" aria-hidden="true">QY</div>
+      <h1>Qinkai Yu</h1>
+      <p class="profile-position">PhD Researcher<br>Computer Science</p>
+      <p class="profile-affiliations">
+        <a href="https://www.exeter.ac.uk/" rel="noopener">University of Exeter</a><br>
+        Liverpool Centre for Cardiovascular Science
+      </p>
+      <nav class="profile-links" aria-label="Academic profiles and contact">
+        <a href="https://scholar.google.com/citations?user=91kKHIcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://github.com/Qinkaiyu" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:qy269@exeter.ac.uk">Email</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section aria-label="Academic profile">
+        <h2 id="about">About Me</h2>
+        <p>I am a PhD researcher at the University of Exeter and a researcher at the Liverpool Centre for Cardiovascular Science. My work spans ECG analysis, medical image grading, and reasoning and representations in language models.</p>
+        <hr>
+
+        <h2 id="research">Research Interests</h2>
+        <ul class="research-list">
+          <li><strong>Clinical AI &amp; ECG:</strong> Combining ECGs and clinical data for stroke risk prediction, and studying ECG markers of cardiovascular–kidney–metabolic burden.</li>
+          <li><strong>Medical vision:</strong> Developing methods for medical image grading and cross-modal learning, including ordinal prediction, text-guided learning and labelled optimal transport.</li>
+          <li><strong>Language &amp; reasoning:</strong> Studying how reasoning-step length affects language models and where concepts are encoded across model layers.</li>
+        </ul>
+        <hr>
+
+        <h2 id="news">News</h2>
+        <ul id="news-list">
+          <li><time datetime="2026-07-07">Jul 2026</time> — <a href="https://doi.org/10.1109/TMI.2026.3710844" target="_blank" rel="noopener noreferrer">DiffGeo-AOR</a>, our work on diffusion-based autoregressive medical grading, was published in <em>IEEE Transactions on Medical Imaging</em>.</li>
+          <li><time datetime="2026-06-29">Jun 2026</time> — Our study on <a href="https://doi.org/10.1186/s12933-026-03246-5" target="_blank" rel="noopener noreferrer">ECG analysis of cardiovascular–kidney–metabolic burden</a> in people with diabetes was published in <em>Cardiovascular Diabetology</em>.</li>
+          <li><time datetime="2026-04-09">Apr 2026</time> — Our <a href="https://doi.org/10.1016/j.jacasi.2025.11.009" target="_blank" rel="noopener noreferrer">editorial on AI–genomic integration for atrial fibrillation prediction</a> in East Asian populations was published online in <em>JACC: Asia</em>.</li>
+          <li><time datetime="2026-01">Jan 2026</time> — Our <a href="https://doi.org/10.1016/j.lansea.2025.100715" target="_blank" rel="noopener noreferrer">KERALA-AF study</a> combining scanned ECGs and clinical data for stroke risk prediction was published in <em>The Lancet Regional Health – Southeast Asia</em>.</li>
+          <li><time datetime="2025-09">Sep 2025</time> — <a href="https://papers.miccai.org/miccai-2025/0667-Paper0874.html" target="_blank" rel="noopener noreferrer">AOR-DR</a>, our diffusion-based autoregressive method for diabetic retinopathy grading, appeared in the <em>MICCAI 2025</em> proceedings.</li>
+        </ul>
+        <hr>
+
+        <h2 id="publications">Publications</h2>
+        <div class="publications">
+          <h3 class="year">2026</h3>
+          <ol class="bibliography">
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://doi.org/10.1016/j.lansea.2025.100715" target="_blank" rel="noopener noreferrer">Integration of clinical data with scanned ECGs using deep learning methods for stroke risk prediction in Indian patients with atrial fibrillation: evidence from the KERALA-AF study</a></div>
+              <div class="periodical"><em>The Lancet Regional Health – Southeast Asia, 2026.</em></div>
+            </div></div></li>
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://doi.org/10.1186/s12933-026-03246-5" target="_blank" rel="noopener noreferrer">Deep learning analysis of ECGs detects Cardiovascular–Kidney–Metabolic syndrome burden in people with diabetes: a report from the Silesia Diabetes-Heart Project</a></div>
+              <div class="periodical"><em>Cardiovascular Diabetology, 2026.</em></div>
+            </div></div></li>
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://doi.org/10.1016/j.jacasi.2025.11.009" target="_blank" rel="noopener noreferrer">Extending AI-Genomic Integration for Atrial Fibrillation Prediction to East Asian Populations</a></div>
+              <div class="periodical"><em>JACC: Asia, 2026 · Editorial.</em></div>
+            </div></div></li>
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://doi.org/10.1109/TMI.2026.3710844" target="_blank" rel="noopener noreferrer">DiffGeo-AOR: Diffusion-Optimized Medical Grading via Geometric Priors Enhanced Autoregressive Ordinal Regression</a></div>
+              <div class="periodical"><em>IEEE Transactions on Medical Imaging, 2026.</em></div>
+              <div class="links"><a class="btn" href="https://github.com/Qinkaiyu/DiffGeo-AOR" target="_blank" rel="noopener noreferrer">Code</a></div>
+            </div></div></li>
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://doi.org/10.1109/TIP.2026.3655563" target="_blank" rel="noopener noreferrer">StealthMark: Harmless and Stealthy Ownership Verification for Medical Segmentation via Uncertainty-Guided Backdoors</a></div>
+              <div class="periodical"><em>IEEE Transactions on Image Processing, 2026.</em></div>
+            </div></div></li>
+          </ol>
+
+          <h3 class="year">2025</h3>
+          <ol class="bibliography">
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://papers.miccai.org/miccai-2025/0667-Paper0874.html" target="_blank" rel="noopener noreferrer">Parameterized Diffusion Optimization enabled Autoregressive Ordinal Regression for Diabetic Retinopathy Grading</a></div>
+              <div class="periodical"><em>MICCAI, 2025 · Oral presentation.</em></div>
+            </div></div></li>
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://papers.miccai.org/miccai-2025/0790-Paper0878.html" target="_blank" rel="noopener noreferrer">Robust Incomplete-Modality Alignment for Ophthalmic Disease Grading and Diagnosis via Labeled Optimal Transport</a></div>
+              <div class="periodical"><em>MICCAI, 2025.</em></div>
+            </div></div></li>
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://aclanthology.org/2025.coling-main.37/" target="_blank" rel="noopener noreferrer">Exploring Concept Depth: How Large Language Models Acquire Knowledge and Concept at Different Layers?</a></div>
+              <div class="periodical"><em>COLING, 2025.</em></div>
+            </div></div></li>
+          </ol>
+
+          <h3 class="year">2024</h3>
+          <ol class="bibliography">
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://papers.miccai.org/miccai-2024/141-Paper1493.html" target="_blank" rel="noopener noreferrer">CLIP-DR: Textual Knowledge-Guided Diabetic Retinopathy Grading with Ranking-aware Prompting</a></div>
+              <div class="periodical"><em>MICCAI, 2024.</em></div>
+              <div class="links"><a class="btn" href="https://github.com/Qinkaiyu/CLIP-DR" target="_blank" rel="noopener noreferrer">Code</a></div>
+            </div></div></li>
+            <li><div class="pub-row"><div>
+              <div class="title"><a href="https://aclanthology.org/2024.findings-acl.108/" target="_blank" rel="noopener noreferrer">The Impact of Reasoning Step Length on Large Language Models</a></div>
+              <div class="periodical"><em>Findings of ACL, 2024.</em></div>
+            </div></div></li>
+          </ol>
+        </div>
+        <hr>
+
+        <h2 id="experience">Experience &amp; Education</h2>
+        <ul class="experience-list" aria-label="Research experience">
+          <li><span class="experience-date">Nov 2024 — Present</span><strong>PhD in Computer Science</strong><br>University of Exeter<br>Supervisors: Yanda Meng, Aline Villavicencio, Yalin Zheng, and Gregory Y. H. Lip</li>
+          <li><span class="experience-date">Nov 2024 — Present</span><strong>Researcher</strong><br>Liverpool Centre for Cardiovascular Science<br>ECG risk prediction and cardiovascular–kidney–metabolic research</li>
+          <li><span class="experience-date">Feb — Jun 2026</span><strong>Visiting Research Intern</strong><br>Bioengineering Program, Biomedical Sciences Division, KAUST</li>
+        </ul>
+        <h3>Education</h3>
+        <ul class="education-list">
+          <li><strong>BSc in Mathematics</strong><br>University of Liverpool · 2022–2024</li>
+          <li><strong>BSc in Applied Mathematics</strong><br>Xi’an Jiaotong-Liverpool University · 2020–2022</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <small>Powered by <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener noreferrer">Minimal Light</a> theme.</small>
+    </footer>
+  </div>
+</body>
+</html>
